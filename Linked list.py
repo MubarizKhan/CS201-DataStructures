@@ -31,6 +31,51 @@ class List:
             temp = temp.next
 
 
+    def length(self):
+        cur = self.head
+        total = 0
+        while cur.next != None:
+            total += 1
+            cur = cur.next
+        print (total)
+        return total
+
+    def get(self,index):
+        if index>= self.length():
+            print ("Index out of range: ERROR")
+            return None
+
+        cur_idx = 0
+        cur_node = self.head
+        while True:
+            cur_node = cur_node.next
+            if cur_idx == index:
+                print (cur_node.val)
+                return cur_node.val
+            cur_idx += 1
+
+
+    def erase(self, index):
+        if index >= self.length():
+            print ("Index is out of range: ERROR")
+            return None
+        cur_idx = 0
+        cur_node = self.head
+        while True:
+            last_node = cur_node
+            cur_node = cur_node.next
+            if cur_idx == index:
+                last_node.next = cur_node.next
+                print (cur_idx,"<--- this is the value")
+                return 
+
+            cur_idx += 1
+
+        
+
+
+
+
 
 if __name__ == "__main__":
     
@@ -40,6 +85,11 @@ if __name__ == "__main__":
     L.append(3423)
     L.append(23345)
     L.append(46666)
+    L.append(1234)
+    L.length()
+    
+   
+    L.erase(0)
 
     L.print()
 
