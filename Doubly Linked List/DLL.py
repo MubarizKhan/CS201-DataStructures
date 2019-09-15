@@ -61,6 +61,26 @@ class DLL:
         new_node.next = temp 
         if temp is not None:
             temp.prev = new_node
+            
+            
+    def pop(self):
+
+        if self.head is None:
+            raise Exception("List is empty")
+
+        if self.head.next is None:
+            val = self.head.val
+            self.head = None
+            return val
+
+        temp = self.head
+        while temp.next is not None:
+            prev = temp 
+            temp = temp.next
+
+        val = temp.val
+        prev.next = None
+        return val
 
 
 
