@@ -1,0 +1,3808 @@
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+======================================================= ERRORS ========================================================
+__________________________________________ ERROR collecting test_student.py ___________________________________________
+..\..\..\Anaconda3\lib\site-packages\_pytest\python.py:499: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\..\Anaconda3\lib\site-packages\py\_path\local.py:701: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:983: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:967: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:668: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:638: in _load_backward_compatible
+    ???
+..\..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:296: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a02 import Address
+E     File "C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2\a02.py", line 44
+E       # print(l)
+E                ^
+E   SyntaxError: unexpected EOF while parsing
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=============================================== 1 error in 0.32 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+
+test_student.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Address object at 0x00000157843BF588>
+
+    def get_full_address(self):
+>       print ("H .NO", house_no, "street", street, city, country )
+E       NameError: name 'house_no' is not defined
+
+a02.py:9: NameError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.17 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+
+test_student.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Address object at 0x000001F6B423D630>
+
+    def get_full_address(self):
+>       print ("H .NO", house_no, "street", street, city, country )
+E       NameError: name 'house_no' is not defined
+
+a02.py:9: NameError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.15 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert None == 'H. No. 2, Street 3, Peshawar Pakistan'
+E        +  where None = <bound method Address.get_full_address of <a02.Address object at 0x000002006D173EF0>>()
+E        +    where <bound method Address.get_full_address of <a02.Address object at 0x000002006D173EF0>> = <a02.Address object at 0x000002006D173EF0>.get_full_address
+
+test_student.py:23: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+H .NO 2 street 3 Peshawar Pakistan
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.18 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert ('H .NO', 2, 'street', 3, 'Peshawar', 'Pakistan') == 'H. No. 2, Street 3, Peshawar Pakistan'
+E        +  where ('H .NO', 2, 'street', 3, 'Peshawar', 'Pakistan') = <bound method Address.get_full_address of <a02.Address object at 0x0000013BEE21D6D8>>()
+E        +    where <bound method Address.get_full_address of <a02.Address object at 0x0000013BEE21D6D8>> = <a02.Address object at 0x0000013BEE21D6D8>.get_full_address
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.16 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert ('H .NO', 2, 'street', 3, 'Peshawar', 'Pakistan') == 'H. No. 2, Street 3, Peshawar Pakistan'
+E        +  where ('H .NO', 2, 'street', 3, 'Peshawar', 'Pakistan') = <bound method Address.get_full_address of <a02.Address object at 0x000001DF2CF2D6A0>>()
+E        +    where <bound method Address.get_full_address of <a02.Address object at 0x000001DF2CF2D6A0>> = <a02.Address object at 0x000001DF2CF2D6A0>.get_full_address
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.15 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H .NO2street...hawarPakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H .NO2street3PeshawarPakistan
+E         ?  -  ^ ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?   + ^^^ ^^^     + ++        +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.15 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H .NO2street...hawarPakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H .NO2street3PeshawarPakistan
+E         ?  -  ^ ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?   + ^^^ ^^^     + ++        +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.15 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H .NO2street...hawarPakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H .NO2street3PeshawarPakistan
+E         ?  -  ^ ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?   + ^^^ ^^^     + ++        +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.14 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No.2stree...hawarPakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No.2street3PeshawarPakistan
+E         ?        ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?       + ^^^     + ++        +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.14 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No.2stree...hawarPakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No.2street3PeshawarPakistan
+E         ?        ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?       + ^^^     + ++        +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.14 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.14 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street3 , Peshawar Pakistan
+E         ?         -  ^      -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^     +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.13 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street3 , Peshawar Pakistan
+E         ?         -  ^      -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^     +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.13 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.12 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.12 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.13 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.13 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.12 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:26: TypeError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       TypeError: Address() takes no arguments
+
+test_student.py:30: TypeError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.12 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+        a = Address(2, 3, "Peshawar", "Pakistan")
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:27: AssertionError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+        a = Address(21, 3, "Peshawar", "Pakistan")
+>       assert str(a) == "H. No. 21, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 21 , ...awar Pakistan' == 'H. No. 21, St...awar Pakistan'
+E         - H. No. 21 , street 3 , Peshawar Pakistan
+E         ?          -  ^       -
+E         + H. No. 21, Street 3, Peshawar Pakistan
+E         ?            ^
+
+test_student.py:31: AssertionError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.13 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+        a = Address(2, 3, "Peshawar", "Pakistan")
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:27: AssertionError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+        a = Address(21, 3, "Peshawar", "Pakistan")
+>       assert str(a) == "H. No. 21, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 21 , ...awar Pakistan' == 'H. No. 21, St...awar Pakistan'
+E         - H. No. 21 , street 3 , Peshawar Pakistan
+E         ?          -  ^       -
+E         + H. No. 21, Street 3, Peshawar Pakistan
+E         ?            ^
+
+test_student.py:31: AssertionError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.12 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+        a = Address(2, 3, "Peshawar", "Pakistan")
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 , s...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 , street 3 , Peshawar Pakistan
+E         ?         -  ^       -
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^
+
+test_student.py:27: AssertionError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+        a = Address(21, 3, "Peshawar", "Pakistan")
+>       assert str(a) == "H. No. 21, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 21 , ...awar Pakistan' == 'H. No. 21, St...awar Pakistan'
+E         - H. No. 21 , street 3 , Peshawar Pakistan
+E         ?          -  ^       -
+E         + H. No. 21, Street 3, Peshawar Pakistan
+E         ?            ^
+
+test_student.py:31: AssertionError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.12 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 ,st...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 ,street3, Peshawar Pakistan
+E         ?         - ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?          ^^     +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+        a = Address(2, 3, "Peshawar", "Pakistan")
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 ,st...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 ,street3, Peshawar Pakistan
+E         ?         - ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?          ^^     +
+
+test_student.py:27: AssertionError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+        a = Address(21, 3, "Peshawar", "Pakistan")
+>       assert str(a) == "H. No. 21, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 21 ,s...awar Pakistan' == 'H. No. 21, St...awar Pakistan'
+E         - H. No. 21 ,street3, Peshawar Pakistan
+E         ?          - ^
+E         + H. No. 21, Street 3, Peshawar Pakistan
+E         ?           ^^     +
+
+test_student.py:31: AssertionError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.12 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 ,st...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 ,street3, Peshawar Pakistan
+E         ?         - ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?          ^^     +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+        a = Address(2, 3, "Peshawar", "Pakistan")
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 ,st...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 ,street3, Peshawar Pakistan
+E         ?         - ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?          ^^     +
+
+test_student.py:27: AssertionError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+        a = Address(21, 3, "Peshawar", "Pakistan")
+>       assert str(a) == "H. No. 21, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 21 ,s...awar Pakistan' == 'H. No. 21, St...awar Pakistan'
+E         - H. No. 21 ,street3, Peshawar Pakistan
+E         ?          - ^
+E         + H. No. 21, Street 3, Peshawar Pakistan
+E         ?           ^^     +
+
+test_student.py:31: AssertionError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.20 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 ,st...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 ,street3, Peshawar Pakistan
+E         ?         - ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?          ^^     +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+        a = Address(2, 3, "Peshawar", "Pakistan")
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2 ,st...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2 ,street3, Peshawar Pakistan
+E         ?         - ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?          ^^     +
+
+test_student.py:27: AssertionError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+        a = Address(21, 3, "Peshawar", "Pakistan")
+>       assert str(a) == "H. No. 21, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 21 ,s...awar Pakistan' == 'H. No. 21, St...awar Pakistan'
+E         - H. No. 21 ,street3, Peshawar Pakistan
+E         ?          - ^
+E         + H. No. 21, Street 3, Peshawar Pakistan
+E         ?           ^^     +
+
+test_student.py:31: AssertionError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.40 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2,str...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2,street3, Peshawar Pakistan
+E         ?          ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?          ^^     +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+        a = Address(2, 3, "Peshawar", "Pakistan")
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2,str...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2,street3, Peshawar Pakistan
+E         ?          ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?          ^^     +
+
+test_student.py:27: AssertionError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+        a = Address(21, 3, "Peshawar", "Pakistan")
+>       assert str(a) == "H. No. 21, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 21,st...awar Pakistan' == 'H. No. 21, St...awar Pakistan'
+E         - H. No. 21,street3, Peshawar Pakistan
+E         ?           ^
+E         + H. No. 21, Street 3, Peshawar Pakistan
+E         ?           ^^     +
+
+test_student.py:31: AssertionError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.20 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2, st...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2, street3, Peshawar Pakistan
+E         ?           ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^     +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+        a = Address(2, 3, "Peshawar", "Pakistan")
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2, st...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2, street3, Peshawar Pakistan
+E         ?           ^
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?           ^     +
+
+test_student.py:27: AssertionError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+        a = Address(21, 3, "Peshawar", "Pakistan")
+>       assert str(a) == "H. No. 21, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 21, s...awar Pakistan' == 'H. No. 21, St...awar Pakistan'
+E         - H. No. 21, street3, Peshawar Pakistan
+E         ?            ^
+E         + H. No. 21, Street 3, Peshawar Pakistan
+E         ?            ^     +
+
+test_student.py:31: AssertionError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.21 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_address_1 ___________________________________________________
+
+    def test_s_address_1():
+        a = Address()
+        a.house_no = 2
+        a.street = 3
+        a.city = "Peshawar"
+        a.country = "Pakistan"
+    
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2, St...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2, Street3, Peshawar Pakistan
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?                 +
+
+test_student.py:23: AssertionError
+__________________________________________________ test_s_address_2 ___________________________________________________
+
+    def test_s_address_2():
+        a = Address(2, 3, "Peshawar", "Pakistan")
+>       assert a.get_full_address() == "H. No. 2, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 2, St...awar Pakistan' == 'H. No. 2, Str...awar Pakistan'
+E         - H. No. 2, Street3, Peshawar Pakistan
+E         + H. No. 2, Street 3, Peshawar Pakistan
+E         ?                 +
+
+test_student.py:27: AssertionError
+__________________________________________________ test_s_address_3 ___________________________________________________
+
+    def test_s_address_3():
+        a = Address(21, 3, "Peshawar", "Pakistan")
+>       assert str(a) == "H. No. 21, Street 3, Peshawar Pakistan"
+E       AssertionError: assert 'H. No. 21, S...awar Pakistan' == 'H. No. 21, St...awar Pakistan'
+E         - H. No. 21, Street3, Peshawar Pakistan
+E         + H. No. 21, Street 3, Peshawar Pakistan
+E         ?                  +
+
+test_student.py:31: AssertionError
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+============================================== 7 failed in 0.20 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ...FFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:36: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+>       e.set_current_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_current_address'
+
+test_student.py:42: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+========================================= 4 failed, 3 passed in 0.18 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ...FFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_current_address()  == "H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x000001DBA5CF52E8>
+
+    def get_current_address(self):
+    
+>       return  "H. No."+ " " + str(self.current_address.house_no) +  ", " +"Street "+ str(self.current_address.street)+ ", " + str(self.current_address.city) + " "+str(self.current_address.country)
+E       AttributeError: 'Employee' object has no attribute 'current_address'
+
+a02.py:33: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x000001DBA5D40828>
+
+    def get_permanent_address(self):
+>       return self.permenant_address
+E       AttributeError: 'Employee' object has no attribute 'permenant_address'
+
+a02.py:37: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+========================================= 4 failed, 3 passed in 0.19 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ...FFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_current_address()  == "H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000024C1B86F390>
+
+    def get_current_address(self):
+    
+>       return  "H. No."+ " " + str(self.current_address.house_no) +  ", " +"Street "+ str(self.current_address.street)+ ", " + str(self.current_address.city) + " "+str(self.current_address.country)
+E       AttributeError: 'Employee' object has no attribute 'current_address'
+
+a02.py:33: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000024C1B8BC8D0>
+
+    def get_permanent_address(self):
+        # return self.permenant_address
+>       return  "H. No."+ " " + str(self.permenant_address.house_no) +  ", " +"Street "+ str(self.permenant_address.street)+ ", " + str(self.permenant_address.city) + " "+str(self.permenant_address.country)
+E       AttributeError: 'Employee' object has no attribute 'permenant_address'
+
+a02.py:38: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+========================================= 4 failed, 3 passed in 0.31 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ...FFFF                                                                                          [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_s_employee_1 __________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_current_address()  == "H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x000001A5080A9518>
+
+    def get_current_address(self):
+    
+>       return  "H. No."+ " " + str(self.current_address.house_no) +  ", " +"Street "+ str(self.current_address.street)+ ", " + str(self.current_address.city) + " "+str(self.current_address.country)
+E       AttributeError: 'Employee' object has no attribute 'current_address'
+
+a02.py:33: AttributeError
+__________________________________________________ test_s_employee_2 __________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x000001A5081022E8>
+
+    def get_permanent_address(self):
+        # return self.permenant_address
+>       return  "H. No."+ " " + str(self.permenant_address.house_no) +  ", " +"Street "+ str(self.permenant_address.street)+ ", " + str(self.permenant_address.city) + " "+str(self.permenant_address.country)
+E       AttributeError: 'Employee' object has no attribute 'permenant_address'
+
+a02.py:38: AttributeError
+__________________________________________________ test_s_employee_3 __________________________________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       TypeError: Employee() takes no arguments
+
+test_student.py:52: TypeError
+__________________________________________________ test_s_lecturer_1 __________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+========================================= 4 failed, 3 passed in 0.21 seconds ==========================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ...FFFF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_1 __________________________________________________________________________
+
+    def test_s_employee_1():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_current_address()  == "H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000017654B6E2E8>
+
+    def get_current_address(self):
+        # pass
+>       return  "H. No."+ " " + str(self.current_address.house_no) +  ", " +"Street "+ str(self.current_address.street)+ ", " + str(self.current_address.city) + " "+str(self.current_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:33: AttributeError
+__________________________________________________________________________ test_s_employee_2 __________________________________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000017654BC09B0>
+
+    def get_permanent_address(self):
+        # pass
+        # return self.permenant_address
+>       return  "H. No."+ " " + str(self.permenant_address.house_no) +  ", " +"Street "+ str(self.permenant_address.street)+ ", " + str(self.permenant_address.city) + " "+str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:39: AttributeError
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_permanent_address'
+
+test_student.py:53: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+================================================================= 4 failed, 3 passed in 0.14 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ....FFF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_2 __________________________________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000018B81C24588>
+
+    def get_permanent_address(self):
+        # pass
+        # return self.permenant_address
+>       return  "H. No."+ " " + str(self.permenant_address.house_no) +  ", " +"Street "+ str(self.permenant_address.street)+ ", " + str(self.permenant_address.city) + " "+str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:39: AttributeError
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_permanent_address'
+
+test_student.py:53: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+================================================================= 3 failed, 4 passed in 0.13 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ....FFF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_2 __________________________________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x000002B637CFD518>
+
+    def get_permanent_address(self):
+        # pass
+        # return self.permenant_address
+    
+        ## check if peremenatn address is None
+            ## if yes then return None
+            ##
+>       return  "H. No."+ " " + str(self.permenant_address.house_no) +  ", " +"Street "+ str(self.permenant_address.street)+ ", " + str(self.permenant_address.city) + " "+str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:43: AttributeError
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_permanent_address'
+
+test_student.py:53: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+================================================================= 3 failed, 4 passed in 0.17 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ....FFF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_2 __________________________________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x00000126F1C1A518>
+
+    def get_permanent_address(self):
+        # pass
+        # return self.permenant_address
+    
+        ## check if peremenatn address is None
+            ## if yes then return None
+>       if self.permanent_address == None:
+E       AttributeError: 'Employee' object has no attribute 'permanent_address'
+
+a02.py:42: AttributeError
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_permanent_address'
+
+test_student.py:53: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+================================================================= 3 failed, 4 passed in 0.27 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ....FFF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_2 __________________________________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000018297C3D208>
+
+    def get_permanent_address(self):
+        # pass
+        # return self.permenant_address
+    
+        ## check if peremenatn address is None
+            ## if yes then return None
+>       if self.permanent_address == None:
+E       AttributeError: 'Employee' object has no attribute 'permanent_address'
+
+a02.py:44: AttributeError
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_permanent_address'
+
+test_student.py:53: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+================================================================= 3 failed, 4 passed in 0.30 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ....FFF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_2 __________________________________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000020D05A4B160>
+
+    def get_permanent_address(self):
+        # pass
+        # return self.permenant_address
+    
+        ## check if peremenatn address is None
+            ## if yes then return None
+>       if self.permanent_address == None:
+E       AttributeError: 'Employee' object has no attribute 'permanent_address'
+
+a02.py:45: AttributeError
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_permanent_address'
+
+test_student.py:53: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+================================================================= 3 failed, 4 passed in 0.19 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ....FFF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_2 __________________________________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000028B5328A400>
+
+    def get_permanent_address(self):
+        # pass
+        # return self.permenant_address
+    
+        ## check if peremenatn address is None
+            ## if yes then return None
+>       if self.permanent_address == None:
+E       AttributeError: 'Employee' object has no attribute 'permanent_address'
+
+a02.py:45: AttributeError
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_permanent_address'
+
+test_student.py:53: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+================================================================= 3 failed, 4 passed in 0.23 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_permanent_address'
+
+test_student.py:53: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+================================================================= 2 failed, 5 passed in 0.23 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+E       AttributeError: 'Employee' object has no attribute 'set_permanent_address'
+
+test_student.py:53: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+E       AttributeError: 'Lecturer' object has no attribute 'set_permanent_address'
+
+test_student.py:59: AttributeError
+================================================================= 2 failed, 5 passed in 0.19 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x000001DB8491C588>
+
+    def __str__(self):
+    
+        print("This is the current Address")
+>       return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+E       AttributeError: 'Employee' object has no attribute 'id'
+
+a02.py:54: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the current Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x000001DB84975358>
+
+    def __str__(self):
+    
+        print("This is the current Address")
+>       return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+E       AttributeError: 'Lecturer' object has no attribute 'id'
+
+a02.py:54: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the current Address
+================================================================= 2 failed, 5 passed in 0.23 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x00000203BA065390>
+
+    def __str__(self):
+    
+        print("This is the current Address")
+>       return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:55: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the current Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x00000203BA0B5400>
+
+    def __str__(self):
+    
+        print("This is the current Address")
+>       return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:55: TypeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the current Address
+================================================================= 2 failed, 5 passed in 0.30 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000020F1AD46390>
+
+    def __str__(self):
+    
+        print("This is the current Address")
+>       return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:55: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the current Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x0000020F1AD95470>
+
+    def __str__(self):
+    
+        print("This is the current Address")
+>       return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:55: TypeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the current Address
+================================================================= 2 failed, 5 passed in 0.22 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000023FB9AE5320>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.self.permenant_address.house_no) + ", " + "Street "+ str(self.self.permenant_address.street) + ", " + str(self.self.permenant_address.city) + " "+ str(self.self.permenant_address.country)
+E       AttributeError: 'Employee' object has no attribute 'self'
+
+a02.py:59: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x0000023FB9B36470>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.self.permenant_address.house_no) + ", " + "Street "+ str(self.self.permenant_address.street) + ", " + str(self.self.permenant_address.city) + " "+ str(self.self.permenant_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:59: TypeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+================================================================= 2 failed, 5 passed in 0.32 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000019D9C69D748>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:59: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x0000019D9C736358>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:59: TypeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+================================================================= 2 failed, 5 passed in 0.21 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000025F83B4D710>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:59: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x0000025F83BE5320>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:59: TypeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+================================================================= 2 failed, 5 passed in 0.22 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ....FFF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_2 __________________________________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+
+test_student.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000018370DD2630>
+
+    def get_permanent_address(self):
+        # pass
+        # return self.permenant_address
+    
+        ## check if peremenatn address is None
+            ## if yes then return None
+        # if self.permenant_address == None:
+        #     return None
+    
+>       return  "H. No."+ " " + str(self.permenant_address.house_no) +  ", " +"Street "+ str(self.permenant_address.street)+ ", " + str(self.permenant_address.city) + " "+str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:50: AttributeError
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000018370E0F470>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:59: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x0000018370DD2C18>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:59: TypeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+================================================================= 3 failed, 4 passed in 0.24 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x00000193D072D438>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:59: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x00000193D07C6438>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:59: TypeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+================================================================= 2 failed, 5 passed in 0.22 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+
+test_student.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x000001E2AF3657F0>, house_no = 1, street = 2, city = 'Cape Town', country = 'South Africa'
+
+    def set_permanent_address(self,house_no,street,city,country):
+        self.permanent_address = Address(house_no,street,city,country)
+        # self.get_current_address == None
+    
+>       self.str = str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:35: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+
+test_student.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x000001E2AF3F4470>, house_no = 44, street = 24, city = 'KL', country = 'Malaysia'
+
+    def set_permanent_address(self,house_no,street,city,country):
+        self.permanent_address = Address(house_no,street,city,country)
+        # self.get_current_address == None
+    
+>       self.str = str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:35: TypeError
+================================================================= 2 failed, 5 passed in 0.22 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+>       e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+
+test_student.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000014A72225A90>, house_no = 1, street = 2, city = 'Cape Town', country = 'South Africa'
+
+    def set_permanent_address(self,house_no,street,city,country):
+        self.permanent_address = Address(house_no,street,city,country)
+        # self.get_current_address == None
+    
+>       self.str = str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       AttributeError: 'NoneType' object has no attribute 'house_no'
+
+a02.py:35: AttributeError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+>       l.set_permanent_address(44, 24, "KL", "Malaysia")
+
+test_student.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x0000014A722B4358>, house_no = 44, street = 24, city = 'KL', country = 'Malaysia'
+
+    def set_permanent_address(self,house_no,street,city,country):
+        self.permanent_address = Address(house_no,street,city,country)
+        # self.get_current_address == None
+    
+>       self.str = str(self.id) +  " " + self.name + " H. No." + str(self.permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:35: TypeError
+================================================================= 2 failed, 5 passed in 0.37 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+
+test_student.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Employee object at 0x0000023871F4B4A8>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.get_permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       AttributeError: 'Employee' object has no attribute 'get_permenant_address'
+
+a02.py:60: AttributeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+
+test_student.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a02.Lecturer object at 0x0000023871F9ADD8>
+
+    def __str__(self):
+    
+        # print("This is the current Address")
+        # return str(self.id) + " " + self.name + " H. No." + str(self.current_address.house_no) + ", " + "Street "+ str(self.current_address.street) + ", " + str(self.current_address.city) + " "+ str(self.current_address.country)
+        #11 Ali H. No. 1, Street 2, Cape Town South Africa
+    
+        print("This is the permenant Address")
+>       return str(self.id) +  " " + self.name + " H. No." + str(self.get_permenant_address.house_no) + ", " + "Street "+ str(self.permenant_address.street) + ", " + str(self.permenant_address.city) + " "+ str(self.permenant_address.country)
+E       TypeError: can only concatenate str (not "NoneType") to str
+
+a02.py:60: TypeError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+================================================================= 2 failed, 5 passed in 0.26 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+E       AssertionError: assert 'H. No. 1, St... South Africa' == '11 Ali H. No.... South Africa'
+E         - H. No. 1, Street 2, Cape Town South Africa
+E         + 11 Ali H. No. 1, Street 2, Cape Town South Africa
+E         ? +++++++
+
+test_student.py:54: AssertionError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+E       AssertionError: assert 'H. No. 44, S..., KL Malaysia' == 'Lecturer: 1 M..., KL Malaysia'
+E         - H. No. 44, Street 24, KL Malaysia
+E         + Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia
+
+test_student.py:60: AssertionError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+================================================================= 2 failed, 5 passed in 0.36 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+E       AssertionError: assert 'H. No. 1, St... South Africa' == '11 Ali H. No.... South Africa'
+E         - H. No. 1, Street 2, Cape Town South Africa
+E         + 11 Ali H. No. 1, Street 2, Cape Town South Africa
+E         ? +++++++
+
+test_student.py:54: AssertionError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+E       AssertionError: assert 'H. No. 44, S..., KL Malaysia' == 'Lecturer: 1 M..., KL Malaysia'
+E         - H. No. 44, Street 24, KL Malaysia
+E         + Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia
+
+test_student.py:60: AssertionError
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+This is the permenant Address
+================================================================= 2 failed, 5 passed in 0.33 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+E       AssertionError: assert 'H. No. 1, St... South Africa' == '11 Ali H. No.... South Africa'
+E         - H. No. 1, Street 2, Cape Town South Africa
+E         + 11 Ali H. No. 1, Street 2, Cape Town South Africa
+E         ? +++++++
+
+test_student.py:54: AssertionError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+E       AssertionError: assert 'H. No. 44, S..., KL Malaysia' == 'Lecturer: 1 M..., KL Malaysia'
+E         - H. No. 44, Street 24, KL Malaysia
+E         + Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia
+
+test_student.py:60: AssertionError
+================================================================= 2 failed, 5 passed in 0.17 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+E       AssertionError: assert 'H. No. 1, St... South Africa' == '11 Ali H. No.... South Africa'
+E         - H. No. 1, Street 2, Cape Town South Africa
+E         + 11 Ali H. No. 1, Street 2, Cape Town South Africa
+E         ? +++++++
+
+test_student.py:54: AssertionError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+E       AssertionError: assert 'H. No. 44, S..., KL Malaysia' == 'Lecturer: 1 M..., KL Malaysia'
+E         - H. No. 44, Street 24, KL Malaysia
+E         + Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia
+
+test_student.py:60: AssertionError
+================================================================= 2 failed, 5 passed in 0.20 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .....FF                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_employee_3 __________________________________________________________________________
+
+    def test_s_employee_3():
+        e = Employee(11, "Ali")
+        e.set_permanent_address(1, 2, "Cape Town", "South Africa")
+>       assert str(e) == "11 Ali H. No. 1, Street 2, Cape Town South Africa"
+E       AssertionError: assert '11AliH. No. ... South Africa' == '11 Ali H. No.... South Africa'
+E         - 11AliH. No. 1, Street 2, Cape Town South Africa
+E         + 11 Ali H. No. 1, Street 2, Cape Town South Africa
+E         ?   +   +
+
+test_student.py:54: AssertionError
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+E       AssertionError: assert '1NoneH. No. ..., KL Malaysia' == 'Lecturer: 1 M..., KL Malaysia'
+E         - 1NoneH. No. 44, Street 24, KL Malaysia
+E         + Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia
+
+test_student.py:60: AssertionError
+================================================================= 2 failed, 5 passed in 0.21 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ......F                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+E       AssertionError: assert '1 None H. No..., KL Malaysia' == 'Lecturer: 1 M..., KL Malaysia'
+E         - 1 None H. No. 44, Street 24, KL Malaysia
+E         ?   ^ ^^
+E         + Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia
+E         ? ++++++++++  ^^^^^^^^^ ^
+
+test_student.py:60: AssertionError
+================================================================= 1 failed, 6 passed in 0.20 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ......F                                                                                                                                          [100%]
+
+============================================================================== FAILURES ===============================================================================
+__________________________________________________________________________ test_s_lecturer_1 __________________________________________________________________________
+
+    def test_s_lecturer_1():
+        l = Lecturer()
+        l.set_permanent_address(44, 24, "KL", "Malaysia")
+>       assert str(l) == "Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia"
+E       AssertionError: assert 'Lecturer:1 M..., KL Malaysia' == 'Lecturer: 1 M..., KL Malaysia'
+E         - Lecturer:1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia
+E         + Lecturer: 1 Mr. Bigshot H. No. 44, Street 24, KL Malaysia
+E         ?          +
+
+test_student.py:60: AssertionError
+================================================================= 1 failed, 6 passed in 0.40 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\Datastructures Assignments\Assignment 2, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .......                                                                                                                                          [100%]
+
+====================================================================== 7 passed in 0.09 seconds =======================================================================
