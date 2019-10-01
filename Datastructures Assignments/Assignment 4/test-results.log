@@ -1,0 +1,3009 @@
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py FFFFFFFFFFFFF                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_len_1 _____________________________________________________
+
+    def test_s_len_1():
+        l = Ring()
+>       l.insert(0, 5)
+
+test_student.py:6: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000023FCA9A8B38>, index = 0, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+>               last.next = new_node
+E               AttributeError: 'method' object has no attribute 'next'
+
+a04.py:47: AttributeError
+____________________________________________________ test_s_len_2 _____________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+E       AttributeError: 'Ring' object has no attribute 'len'
+
+test_student.py:13: AttributeError
+____________________________________________________ test_s_len_3 _____________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+___________________________________________________ test_s_remove_1 ___________________________________________________
+
+    def test_s_remove_1():
+        l = Ring()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(5)
+E       AttributeError: 'Ring' object has no attribute 'remove'
+
+test_student.py:28: AttributeError
+___________________________________________________ test_s_remove_2 ___________________________________________________
+
+    def test_s_remove_2():
+        l = Ring()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(6)
+E       AttributeError: 'Ring' object has no attribute 'remove'
+
+test_student.py:39: AttributeError
+___________________________________________________ test_s_remove_3 ___________________________________________________
+
+    def test_s_remove_3():
+        l = Ring()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(19)
+E       AttributeError: 'Ring' object has no attribute 'remove'
+
+test_student.py:49: AttributeError
+_________________________________________________ test_s_remove_at_1 __________________________________________________
+
+    def test_s_remove_at_1():
+        l = Ring()
+        l.push(5)
+>       l.remove_at(0)
+E       AttributeError: 'Ring' object has no attribute 'remove_at'
+
+test_student.py:56: AttributeError
+_________________________________________________ test_s_remove_at_2 __________________________________________________
+
+    def test_s_remove_at_2():
+        l = Ring()
+        l.push(5)
+        l.push(8)
+>       l.remove_at(1)
+E       AttributeError: 'Ring' object has no attribute 'remove_at'
+
+test_student.py:66: AttributeError
+_________________________________________________ test_s_remove_at_3 __________________________________________________
+
+    def test_s_remove_at_3():
+        l = Ring()
+>       l.remove_at(0)
+E       AttributeError: 'Ring' object has no attribute 'remove_at'
+
+test_student.py:75: AttributeError
+____________________________________________________ test_s_get_1 _____________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________ test_s_get_2 _____________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________ test_s_get_3 _____________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________ test_s_get_4 _____________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+============================================== 13 failed in 0.35 seconds ==============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py FFFFFFFFFFFFF                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_len_1 _____________________________________________________
+
+    def test_s_len_1():
+        l = Ring()
+        l.insert(0, 5)
+        l.insert(0, 6)
+    
+>       assert l.len() == 2
+E       AttributeError: 'Ring' object has no attribute 'len'
+
+test_student.py:9: AttributeError
+____________________________________________________ test_s_len_2 _____________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+E       AttributeError: 'Ring' object has no attribute 'len'
+
+test_student.py:13: AttributeError
+____________________________________________________ test_s_len_3 _____________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+___________________________________________________ test_s_remove_1 ___________________________________________________
+
+    def test_s_remove_1():
+        l = Ring()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(5)
+E       AttributeError: 'Ring' object has no attribute 'remove'
+
+test_student.py:28: AttributeError
+___________________________________________________ test_s_remove_2 ___________________________________________________
+
+    def test_s_remove_2():
+        l = Ring()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(6)
+E       AttributeError: 'Ring' object has no attribute 'remove'
+
+test_student.py:39: AttributeError
+___________________________________________________ test_s_remove_3 ___________________________________________________
+
+    def test_s_remove_3():
+        l = Ring()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(19)
+E       AttributeError: 'Ring' object has no attribute 'remove'
+
+test_student.py:49: AttributeError
+_________________________________________________ test_s_remove_at_1 __________________________________________________
+
+    def test_s_remove_at_1():
+        l = Ring()
+        l.push(5)
+>       l.remove_at(0)
+E       AttributeError: 'Ring' object has no attribute 'remove_at'
+
+test_student.py:56: AttributeError
+_________________________________________________ test_s_remove_at_2 __________________________________________________
+
+    def test_s_remove_at_2():
+        l = Ring()
+        l.push(5)
+        l.push(8)
+>       l.remove_at(1)
+E       AttributeError: 'Ring' object has no attribute 'remove_at'
+
+test_student.py:66: AttributeError
+_________________________________________________ test_s_remove_at_3 __________________________________________________
+
+    def test_s_remove_at_3():
+        l = Ring()
+>       l.remove_at(0)
+E       AttributeError: 'Ring' object has no attribute 'remove_at'
+
+test_student.py:75: AttributeError
+____________________________________________________ test_s_get_1 _____________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________ test_s_get_2 _____________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________ test_s_get_3 _____________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________ test_s_get_4 _____________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+============================================== 13 failed in 0.37 seconds ==============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py FFF...FFFFFFF                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_len_1 _____________________________________________________
+
+    def test_s_len_1():
+        l = Ring()
+        l.insert(0, 5)
+        l.insert(0, 6)
+    
+>       assert l.len() == 2
+E       AttributeError: 'Ring' object has no attribute 'len'
+
+test_student.py:9: AttributeError
+____________________________________________________ test_s_len_2 _____________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+E       AttributeError: 'Ring' object has no attribute 'len'
+
+test_student.py:13: AttributeError
+____________________________________________________ test_s_len_3 _____________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+_________________________________________________ test_s_remove_at_1 __________________________________________________
+
+    def test_s_remove_at_1():
+        l = Ring()
+        l.push(5)
+>       l.remove_at(0)
+E       AttributeError: 'Ring' object has no attribute 'remove_at'
+
+test_student.py:56: AttributeError
+_________________________________________________ test_s_remove_at_2 __________________________________________________
+
+    def test_s_remove_at_2():
+        l = Ring()
+        l.push(5)
+        l.push(8)
+>       l.remove_at(1)
+E       AttributeError: 'Ring' object has no attribute 'remove_at'
+
+test_student.py:66: AttributeError
+_________________________________________________ test_s_remove_at_3 __________________________________________________
+
+    def test_s_remove_at_3():
+        l = Ring()
+>       l.remove_at(0)
+E       AttributeError: 'Ring' object has no attribute 'remove_at'
+
+test_student.py:75: AttributeError
+____________________________________________________ test_s_get_1 _____________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________ test_s_get_2 _____________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________ test_s_get_3 _____________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________ test_s_get_4 _____________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+========================================= 10 failed, 3 passed in 0.32 seconds =========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py FFF......FFFF                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_len_1 _____________________________________________________
+
+    def test_s_len_1():
+        l = Ring()
+        l.insert(0, 5)
+        l.insert(0, 6)
+    
+>       assert l.len() == 2
+E       AttributeError: 'Ring' object has no attribute 'len'
+
+test_student.py:9: AttributeError
+____________________________________________________ test_s_len_2 _____________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+E       AttributeError: 'Ring' object has no attribute 'len'
+
+test_student.py:13: AttributeError
+____________________________________________________ test_s_len_3 _____________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________ test_s_get_1 _____________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________ test_s_get_2 _____________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________ test_s_get_3 _____________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________ test_s_get_4 _____________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+========================================= 7 failed, 6 passed in 0.29 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py FFF......FFFF                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_len_1 _____________________________________________________
+
+    def test_s_len_1():
+        l = Ring()
+        l.insert(0, 5)
+        l.insert(0, 6)
+    
+>       assert l.len() == 2
+E       AttributeError: 'Ring' object has no attribute 'len'
+
+test_student.py:9: AttributeError
+____________________________________________________ test_s_len_2 _____________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+E       AttributeError: 'Ring' object has no attribute 'len'
+
+test_student.py:13: AttributeError
+____________________________________________________ test_s_len_3 _____________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________ test_s_get_1 _____________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________ test_s_get_2 _____________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________ test_s_get_3 _____________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________ test_s_get_4 _____________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+========================================= 7 failed, 6 passed in 0.24 seconds ==========================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py F.F......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_1 _____________________________________________________________________________
+
+    def test_s_len_1():
+        l = Ring()
+        l.insert(0, 5)
+        l.insert(0, 6)
+    
+>       assert l.len() == 2
+E       assert 1 == 2
+E        +  where 1 = <bound method Ring.len of <a04.Ring object at 0x000002B06DA4E9B0>>()
+E        +    where <bound method Ring.len of <a04.Ring object at 0x000002B06DA4E9B0>> = <a04.Ring object at 0x000002B06DA4E9B0>.len
+
+test_student.py:9: AssertionError
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 6 failed, 7 passed in 0.34 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py F.F......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_1 _____________________________________________________________________________
+
+    def test_s_len_1():
+        l = Ring()
+        l.insert(0, 5)
+        l.insert(0, 6)
+    
+>       assert l.len() == 2
+E       assert 1 == 2
+E        +  where 1 = <bound method Ring.len of <a04.Ring object at 0x000002794DBA2438>>()
+E        +    where <bound method Ring.len of <a04.Ring object at 0x000002794DBA2438>> = <a04.Ring object at 0x000002794DBA2438>.len
+
+test_student.py:9: AssertionError
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 6 failed, 7 passed in 0.26 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+E       assert 1 == 0
+E        +  where 1 = <bound method Ring.len of <a04.Ring object at 0x000002317F0B6F98>>()
+E        +    where <bound method Ring.len of <a04.Ring object at 0x000002317F0B6F98>> = <a04.Ring object at 0x000002317F0B6F98>.len
+
+test_student.py:13: AssertionError
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 6 failed, 7 passed in 0.28 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py FFF......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_1 _____________________________________________________________________________
+
+    def test_s_len_1():
+        l = Ring()
+        l.insert(0, 5)
+        l.insert(0, 6)
+    
+>       assert l.len() == 2
+E       assert 0 == 2
+E        +  where 0 = <bound method Ring.len of <a04.Ring object at 0x0000023374D2E780>>()
+E        +    where <bound method Ring.len of <a04.Ring object at 0x0000023374D2E780>> = <a04.Ring object at 0x0000023374D2E780>.len
+
+test_student.py:9: AssertionError
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000023374D3E7B8>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        count = 0
+>       while temp.next is not last:
+E       AttributeError: 'NoneType' object has no attribute 'next'
+
+a04.py:147: AttributeError
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 7 failed, 6 passed in 0.23 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+E       assert 1 == 0
+E        +  where 1 = <bound method Ring.len of <a04.Ring object at 0x00000239A54CE1D0>>()
+E        +    where <bound method Ring.len of <a04.Ring object at 0x00000239A54CE1D0>> = <a04.Ring object at 0x00000239A54CE1D0>.len
+
+test_student.py:13: AssertionError
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 6 failed, 7 passed in 0.22 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+E       assert None == 0
+E        +  where None = <bound method Ring.len of <a04.Ring object at 0x000001C954E56EB8>>()
+E        +    where <bound method Ring.len of <a04.Ring object at 0x000001C954E56EB8>> = <a04.Ring object at 0x000001C954E56EB8>.len
+
+test_student.py:13: AssertionError
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 6 failed, 7 passed in 0.27 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+E       assert None == 0
+E        +  where None = <bound method Ring.len of <a04.Ring object at 0x000001D36FA5E390>>()
+E        +    where <bound method Ring.len of <a04.Ring object at 0x000001D36FA5E390>> = <a04.Ring object at 0x000001D36FA5E390>.len
+
+test_student.py:13: AssertionError
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 6 failed, 7 passed in 0.30 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000011E38BED2E8>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:147: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 6 failed, 7 passed in 0.30 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001BADFF0A3C8>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:147: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 6 failed, 7 passed in 0.24 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF......FFFF                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001CC5337B2E8>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:147: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:87: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:95: AttributeError
+____________________________________________________________________________ test_s_get_3 _____________________________________________________________________________
+
+    def test_s_get_3():
+        l = Ring()
+        try:
+>           l.get(2)
+E           AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:101: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+        l.push(1)
+        l.push(2)
+        l.push(4)
+>       assert l.get(5) == 4
+E       AttributeError: 'Ring' object has no attribute 'get'
+
+test_student.py:112: AttributeError
+================================================================= 6 failed, 7 passed in 0.24 seconds ==================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF..........                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001825985B240>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:147: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+================================================================= 2 failed, 11 passed in 0.20 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FFFFFFF.FF.F                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F712AD1D0>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F712C08D0>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+___________________________________________________________________________ test_s_remove_1 ___________________________________________________________________________
+
+    def test_s_remove_1():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F71316B70>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+___________________________________________________________________________ test_s_remove_2 ___________________________________________________________________________
+
+    def test_s_remove_2():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F71334400>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+___________________________________________________________________________ test_s_remove_3 ___________________________________________________________________________
+
+    def test_s_remove_3():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F7130B160>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+_________________________________________________________________________ test_s_remove_at_1 __________________________________________________________________________
+
+    def test_s_remove_at_1():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F71329828>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+_________________________________________________________________________ test_s_remove_at_2 __________________________________________________________________________
+
+    def test_s_remove_at_2():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:64: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F713284E0>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+>       l.push(10)
+
+test_student.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F71334BA8>, index = None, val = 10
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+>       l.push(10)
+
+test_student.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F7130B748>, index = None, val = 10
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+>       l.push(1)
+
+test_student.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000014F7130C438>, index = None, val = 1
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+================================================================= 10 failed, 3 passed in 0.40 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FFFFFFF.FF.F                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000002975252C898>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000029752540898>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+___________________________________________________________________________ test_s_remove_1 ___________________________________________________________________________
+
+    def test_s_remove_1():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000029752596A58>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+___________________________________________________________________________ test_s_remove_2 ___________________________________________________________________________
+
+    def test_s_remove_2():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x00000297525B26A0>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+___________________________________________________________________________ test_s_remove_3 ___________________________________________________________________________
+
+    def test_s_remove_3():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x00000297525883C8>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+_________________________________________________________________________ test_s_remove_at_1 __________________________________________________________________________
+
+    def test_s_remove_at_1():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x00000297525BDA20>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+_________________________________________________________________________ test_s_remove_at_2 __________________________________________________________________________
+
+    def test_s_remove_at_2():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:64: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x00000297525BC630>, index = None, val = 5
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+>       l.push(10)
+
+test_student.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x00000297525B2DA0>, index = None, val = 10
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+>       l.push(10)
+
+test_student.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000029752588A20>, index = None, val = 10
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+>       l.push(1)
+
+test_student.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:163: in push
+    val = self.insert(last, val)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x0000029752587978>, index = None, val = 1
+
+    def insert(self,index, val):
+        new_node = Node(val)
+        last = self._get_last()
+    
+        if index == 0:
+            new_node.next = self.head
+            self.head = new_node
+    
+            if last is None:
+                self.head.next = self.head
+            else:
+                last.next = new_node
+    
+    
+            return
+    
+        temp = self.head
+        counter = 0
+        while temp is not None and counter < index:
+            prev = temp
+            temp = temp.next
+            counter += 1
+    
+>       prev.next = new_node
+E       UnboundLocalError: local variable 'prev' referenced before assignment
+
+a04.py:59: UnboundLocalError
+================================================================= 10 failed, 3 passed in 0.36 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FFFFFFF.FF.F                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001D89BB2C208>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+>       l.push(5)
+E       AttributeError: 'Ring' object has no attribute 'push'
+
+test_student.py:17: AttributeError
+___________________________________________________________________________ test_s_remove_1 ___________________________________________________________________________
+
+    def test_s_remove_1():
+        l = Ring()
+>       l.push(5)
+E       AttributeError: 'Ring' object has no attribute 'push'
+
+test_student.py:25: AttributeError
+___________________________________________________________________________ test_s_remove_2 ___________________________________________________________________________
+
+    def test_s_remove_2():
+        l = Ring()
+>       l.push(5)
+E       AttributeError: 'Ring' object has no attribute 'push'
+
+test_student.py:36: AttributeError
+___________________________________________________________________________ test_s_remove_3 ___________________________________________________________________________
+
+    def test_s_remove_3():
+        l = Ring()
+>       l.push(5)
+E       AttributeError: 'Ring' object has no attribute 'push'
+
+test_student.py:46: AttributeError
+_________________________________________________________________________ test_s_remove_at_1 __________________________________________________________________________
+
+    def test_s_remove_at_1():
+        l = Ring()
+>       l.push(5)
+E       AttributeError: 'Ring' object has no attribute 'push'
+
+test_student.py:55: AttributeError
+_________________________________________________________________________ test_s_remove_at_2 __________________________________________________________________________
+
+    def test_s_remove_at_2():
+        l = Ring()
+>       l.push(5)
+E       AttributeError: 'Ring' object has no attribute 'push'
+
+test_student.py:64: AttributeError
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+>       l.push(10)
+E       AttributeError: 'Ring' object has no attribute 'push'
+
+test_student.py:84: AttributeError
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+>       l.push(10)
+E       AttributeError: 'Ring' object has no attribute 'push'
+
+test_student.py:92: AttributeError
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+>       l.push(1)
+E       AttributeError: 'Ring' object has no attribute 'push'
+
+test_student.py:109: AttributeError
+================================================================= 10 failed, 3 passed in 0.30 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF..........                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001A9B399B198>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+================================================================= 2 failed, 11 passed in 0.21 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FFFFFFF.FF.F                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83ADD2B0>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83AF0898>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+___________________________________________________________________________ test_s_remove_1 ___________________________________________________________________________
+
+    def test_s_remove_1():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83B45B38>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+___________________________________________________________________________ test_s_remove_2 ___________________________________________________________________________
+
+    def test_s_remove_2():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83B642B0>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+___________________________________________________________________________ test_s_remove_3 ___________________________________________________________________________
+
+    def test_s_remove_3():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83B3AF60>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+_________________________________________________________________________ test_s_remove_at_1 __________________________________________________________________________
+
+    def test_s_remove_at_1():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83B54668>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+_________________________________________________________________________ test_s_remove_at_2 __________________________________________________________________________
+
+    def test_s_remove_at_2():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:64: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83B5F518>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+>       l.push(10)
+
+test_student.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83B649B0>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+>       l.push(10)
+
+test_student.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83B5FB70>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+>       l.push(1)
+
+test_student.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001FF83B45B00>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+================================================================= 10 failed, 3 passed in 0.33 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FFFFFFF.FF.F                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891D9B1D0>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891DAF940>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+___________________________________________________________________________ test_s_remove_1 ___________________________________________________________________________
+
+    def test_s_remove_1():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891E06D30>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+___________________________________________________________________________ test_s_remove_2 ___________________________________________________________________________
+
+    def test_s_remove_2():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891E24278>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+___________________________________________________________________________ test_s_remove_3 ___________________________________________________________________________
+
+    def test_s_remove_3():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891DFA1D0>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+_________________________________________________________________________ test_s_remove_at_1 __________________________________________________________________________
+
+    def test_s_remove_at_1():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891E16668>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+_________________________________________________________________________ test_s_remove_at_2 __________________________________________________________________________
+
+    def test_s_remove_at_2():
+        l = Ring()
+>       l.push(5)
+
+test_student.py:64: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891E3B400>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_get_1 _____________________________________________________________________________
+
+    def test_s_get_1():
+        l = Ring()
+>       l.push(10)
+
+test_student.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891E24780>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_get_2 _____________________________________________________________________________
+
+    def test_s_get_2():
+        l = Ring()
+>       l.push(10)
+
+test_student.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891E3B5C0>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_get_4 _____________________________________________________________________________
+
+    def test_s_get_4():
+        l = Ring()
+>       l.push(1)
+
+test_student.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a04.py:176: in push
+    length = self.len()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001E891E06DD8>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+================================================================= 10 failed, 3 passed in 0.23 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .FF..........                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_2 _____________________________________________________________________________
+
+    def test_s_len_2():
+        l = Ring()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a04.Ring object at 0x000001F47ECFB2E8>
+
+    def len(self):
+    
+        temp = self.head
+        last = self._get_last()
+    
+        if self.head is None:
+>           raise Exception("This list is empty!")
+E           Exception: This list is empty!
+
+a04.py:129: Exception
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+================================================================= 2 failed, 11 passed in 0.14 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py ..F..........                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+================================================================= 1 failed, 12 passed in 0.14 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py ..F..........                                                                                                                                    [100%]
+
+============================================================================== FAILURES ===============================================================================
+____________________________________________________________________________ test_s_len_3 _____________________________________________________________________________
+
+    def test_s_len_3():
+        l = Ring()
+        l.push(5)
+        l.push(2)
+>       l.pop()
+E       AttributeError: 'Ring' object has no attribute 'pop'
+
+test_student.py:19: AttributeError
+================================================================= 1 failed, 12 passed in 0.12 seconds =================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .............                                                                                                                                    [100%]
+
+====================================================================== 13 passed in 0.07 seconds ======================================================================
+========================================================================= test session starts =========================================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\Assignment 4, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .............                                                                                                                                    [100%]
+
+====================================================================== 13 passed in 0.06 seconds ======================================================================
