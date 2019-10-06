@@ -1,0 +1,746 @@
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .FFFF                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_1 _____________________________________________________
+
+    def test_s_rev_1():
+        l = LinkedList()
+        l.push(1)
+        l.push(2)
+        l.push(3)
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:19: AttributeError
+____________________________________________________ test_s_rev_2 _____________________________________________________
+
+    def test_s_rev_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(20)
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:29: AttributeError
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:36: AttributeError
+____________________________________________________ test_s_rev_4 _____________________________________________________
+
+    def test_s_rev_4():
+        l = LinkedList()
+        l.push(4)
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:44: AttributeError
+========================================= 4 failed, 1 passed in 0.18 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .FFFF                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_1 _____________________________________________________
+
+    def test_s_rev_1():
+        l = LinkedList()
+        l.push(1)
+        l.push(2)
+        l.push(3)
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:19: AttributeError
+____________________________________________________ test_s_rev_2 _____________________________________________________
+
+    def test_s_rev_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(20)
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:29: AttributeError
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:36: AttributeError
+____________________________________________________ test_s_rev_4 _____________________________________________________
+
+    def test_s_rev_4():
+        l = LinkedList()
+        l.push(4)
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:44: AttributeError
+========================================= 4 failed, 1 passed in 0.14 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .FFFF                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_1 _____________________________________________________
+
+    def test_s_rev_1():
+        l = LinkedList()
+        l.push(1)
+        l.push(2)
+        l.push(3)
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:19: AttributeError
+____________________________________________________ test_s_rev_2 _____________________________________________________
+
+    def test_s_rev_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(20)
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:29: AttributeError
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:36: AttributeError
+____________________________________________________ test_s_rev_4 _____________________________________________________
+
+    def test_s_rev_4():
+        l = LinkedList()
+        l.push(4)
+>       l.reverse_list()
+E       AttributeError: 'LinkedList' object has no attribute 'reverse_list'
+
+test_student.py:44: AttributeError
+========================================= 4 failed, 1 passed in 0.15 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .FFF.                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_1 _____________________________________________________
+
+    def test_s_rev_1():
+        l = LinkedList()
+        l.push(1)
+        l.push(2)
+        l.push(3)
+        l.reverse_list()
+    
+        m = '[3,2,1]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[1,2,3]' == '[3,2,1]'
+E         - [1,2,3]
+E         + [3,2,1]
+
+test_student.py:22: AssertionError
+____________________________________________________ test_s_rev_2 _____________________________________________________
+
+    def test_s_rev_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(20)
+        l.reverse_list()
+    
+        m = '[20,10]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[10,20]' == '[20,10]'
+E         - [10,20]
+E         + [20,10]
+
+test_student.py:32: AssertionError
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a05.py:150: in reverse_list
+    while temp is not self.get_last():
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x00000257E401C128>
+
+    def get_last(self):
+        if self.head is None:
+>           raise Exception("List is empty! ")
+E           Exception: List is empty!
+
+a05.py:136: Exception
+========================================= 3 failed, 2 passed in 0.16 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .FFFF                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_1 _____________________________________________________
+
+    def test_s_rev_1():
+        l = LinkedList()
+        l.push(1)
+        l.push(2)
+        l.push(3)
+>       l.reverse_list()
+
+test_student.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000001655DEA1860>
+
+    def reverse_list(self):
+        temp = self.head
+        temp2 = self.get_last()
+    
+        for i in range(self.len()):
+            temp3 = temp
+            temp = temp2
+            temp2 = temp3
+    
+>           while temp2.next is not self.get_last():
+E           AttributeError: 'NoneType' object has no attribute 'next'
+
+a05.py:153: AttributeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+3
+____________________________________________________ test_s_rev_2 _____________________________________________________
+
+    def test_s_rev_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(20)
+>       l.reverse_list()
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000001655DEF8160>
+
+    def reverse_list(self):
+        temp = self.head
+        temp2 = self.get_last()
+    
+        for i in range(self.len()):
+            temp3 = temp
+            temp = temp2
+            temp2 = temp3
+    
+>           while temp2.next is not self.get_last():
+E           AttributeError: 'NoneType' object has no attribute 'next'
+
+a05.py:153: AttributeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+2
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a05.py:146: in reverse_list
+    temp2 = self.get_last()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000001655DF11128>
+
+    def get_last(self):
+        if self.head is None:
+>           raise Exception("List is empty! ")
+E           Exception: List is empty!
+
+a05.py:136: Exception
+____________________________________________________ test_s_rev_4 _____________________________________________________
+
+    def test_s_rev_4():
+        l = LinkedList()
+        l.push(4)
+>       l.reverse_list()
+
+test_student.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000001655DEF89E8>
+
+    def reverse_list(self):
+        temp = self.head
+        temp2 = self.get_last()
+    
+        for i in range(self.len()):
+            temp3 = temp
+            temp = temp2
+            temp2 = temp3
+    
+>           while temp2.next is not self.get_last():
+E           AttributeError: 'NoneType' object has no attribute 'next'
+
+a05.py:153: AttributeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+1
+========================================= 4 failed, 1 passed in 0.15 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .FFF.                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_1 _____________________________________________________
+
+    def test_s_rev_1():
+        l = LinkedList()
+        l.push(1)
+        l.push(2)
+        l.push(3)
+        l.reverse_list()
+    
+        m = '[3,2,1]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[1,2,3]' == '[3,2,1]'
+E         - [1,2,3]
+E         + [3,2,1]
+
+test_student.py:22: AssertionError
+____________________________________________________ test_s_rev_2 _____________________________________________________
+
+    def test_s_rev_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(20)
+        l.reverse_list()
+    
+        m = '[20,10]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[10,20]' == '[20,10]'
+E         - [10,20]
+E         + [20,10]
+
+test_student.py:32: AssertionError
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a05.py:148: in reverse_list
+    while temp is not self.get_last():
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000001711F8BC438>
+
+    def get_last(self):
+        if self.head is None:
+>           raise Exception("List is empty! ")
+E           Exception: List is empty!
+
+a05.py:136: Exception
+========================================= 3 failed, 2 passed in 0.16 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .FFF.                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_1 _____________________________________________________
+
+    def test_s_rev_1():
+        l = LinkedList()
+        l.push(1)
+        l.push(2)
+        l.push(3)
+        l.reverse_list()
+    
+        m = '[3,2,1]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[1,2,3]' == '[3,2,1]'
+E         - [1,2,3]
+E         + [3,2,1]
+
+test_student.py:22: AssertionError
+____________________________________________________ test_s_rev_2 _____________________________________________________
+
+    def test_s_rev_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(20)
+        l.reverse_list()
+    
+        m = '[20,10]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[10,20]' == '[20,10]'
+E         - [10,20]
+E         + [20,10]
+
+test_student.py:32: AssertionError
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a05.py:147: in reverse_list
+    l = self.get_last()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000001ABF567C278>
+
+    def get_last(self):
+        if self.head is None:
+>           raise Exception("List is empty! ")
+E           Exception: List is empty!
+
+a05.py:136: Exception
+========================================= 3 failed, 2 passed in 0.24 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .FFF.                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_1 _____________________________________________________
+
+    def test_s_rev_1():
+        l = LinkedList()
+        l.push(1)
+        l.push(2)
+        l.push(3)
+        l.reverse_list()
+    
+        m = '[3,2,1]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[1,2,3]' == '[3,2,1]'
+E         - [1,2,3]
+E         + [3,2,1]
+
+test_student.py:22: AssertionError
+____________________________________________________ test_s_rev_2 _____________________________________________________
+
+    def test_s_rev_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(20)
+        l.reverse_list()
+    
+        m = '[20,10]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[10,20]' == '[20,10]'
+E         - [10,20]
+E         + [20,10]
+
+test_student.py:32: AssertionError
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a05.py:147: in reverse_list
+    l = self.get_last()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000002A2BACBC470>
+
+    def get_last(self):
+        if self.head is None:
+>           raise Exception("List is empty! ")
+E           Exception: List is empty!
+
+a05.py:136: Exception
+========================================= 3 failed, 2 passed in 0.20 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .FFFF                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_1 _____________________________________________________
+
+    def test_s_rev_1():
+        l = LinkedList()
+        l.push(1)
+        l.push(2)
+        l.push(3)
+        l.reverse_list()
+    
+        m = '[3,2,1]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[1,2,3]' == '[3,2,1]'
+E         - [1,2,3]
+E         + [3,2,1]
+
+test_student.py:22: AssertionError
+____________________________________________________ test_s_rev_2 _____________________________________________________
+
+    def test_s_rev_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(20)
+        l.reverse_list()
+    
+        m = '[20,10]'
+>       assert "".join(str(l).split()) == m
+E       AssertionError: assert '[10,20]' == '[20,10]'
+E         - [10,20]
+E         + [20,10]
+
+test_student.py:32: AssertionError
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a05.py:147: in reverse_list
+    l = self.get_last()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000001975B18D1D0>
+
+    def get_last(self):
+        if self.head is None:
+>           raise Exception("List is empty! ")
+E           Exception: List is empty!
+
+a05.py:136: Exception
+____________________________________________________ test_s_rev_4 _____________________________________________________
+
+    def test_s_rev_4():
+        l = LinkedList()
+        l.push(4)
+>       l.reverse_list()
+
+test_student.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000001975B182048>
+
+    def reverse_list(self):
+        temp = self.head
+        rep = temp
+        l = self.get_last()
+    
+>       while temp.next is not self.get_last():
+E       AttributeError: 'NoneType' object has no attribute 'next'
+
+a05.py:149: AttributeError
+========================================= 4 failed, 1 passed in 0.22 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py ...F.                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a05.py:147: in reverse_list
+    l = self.get_last()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x000001D0D5522A20>
+
+    def get_last(self):
+        if self.head is None:
+>           raise Exception("List is empty! ")
+E           Exception: List is empty!
+
+a05.py:136: Exception
+========================================= 1 failed, 4 passed in 0.21 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py ...F.                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a05.py:147: in reverse_list
+    l = self.get_last()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x00000213C97329B0>
+
+    def get_last(self):
+        if self.head is None:
+>           raise Exception("List is empty! ")
+E           Exception: List is empty!
+
+a05.py:136: Exception
+========================================= 1 failed, 4 passed in 0.20 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py ...F.                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+>       l.reverse_list()
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a05.LinkedList object at 0x0000012368733A90>
+
+    def reverse_list(self):
+    
+        if self.head is None:
+>           raise Exception("List is empty; nothing to be reversed!")
+E           Exception: List is empty; nothing to be reversed!
+
+a05.py:147: Exception
+========================================= 1 failed, 4 passed in 0.20 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py ...F.                                                                                            [100%]
+
+====================================================== FAILURES =======================================================
+____________________________________________________ test_s_rev_3 _____________________________________________________
+
+    def test_s_rev_3():
+        l = LinkedList()
+        l.reverse_list()
+    
+        m = '[]'
+>       assert "".join(str(l).split()) == m
+E       TypeError: __str__ returned non-string (type NoneType)
+
+test_student.py:39: TypeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+The list is empty
+========================================= 1 failed, 4 passed in 0.17 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment5, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .....                                                                                            [100%]
+
+============================================== 5 passed in 0.08 seconds ===============================================
