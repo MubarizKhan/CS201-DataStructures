@@ -1,0 +1,1740 @@
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+___________________________________________________ test_s_person_1 ___________________________________________________
+
+    def test_s_person_1():
+>       p = Person('A', 24, 1)
+E       TypeError: Person() takes no arguments
+
+test_student.py:13: TypeError
+___________________________________________________ test_s_person_2 ___________________________________________________
+
+    def test_s_person_2():
+>       p = Person('A', 49, 10)
+E       TypeError: Person() takes no arguments
+
+test_student.py:17: TypeError
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+>           Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+E       TypeError: Person() takes no arguments
+
+test_student.py:23: TypeError
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+>           Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+E       TypeError: Person() takes no arguments
+
+test_student.py:58: TypeError
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+>           Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+E       TypeError: Person() takes no arguments
+
+test_student.py:75: TypeError
+========================================= 5 failed, 1 passed in 0.29 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+___________________________________________________ test_s_person_1 ___________________________________________________
+
+    def test_s_person_1():
+        p = Person('A', 24, 1)
+>       assert str(p) == 'A 99'
+E       AssertionError: assert 'A1' == 'A 99'
+E         - A1
+E         + A 99
+
+test_student.py:14: AssertionError
+___________________________________________________ test_s_person_2 ___________________________________________________
+
+    def test_s_person_2():
+        p = Person('A', 49, 10)
+>       assert str(p) == 'A 190'
+E       AssertionError: assert 'A10' == 'A 190'
+E         - A10
+E         + A 190
+E         ?  + +
+
+test_student.py:18: AssertionError
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+        heap_sort(people)
+        l = ['C 197', 'H 192', 'A 99', 'B 98', 'D 96', 'E 95', 'F 94',
+                'G 93', 'I 91', 'J 90', 'K 89', 'L 88']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'C 197' == 'A1'
+E             - C 197
+E             + A1
+
+test_student.py:43: AssertionError
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+        heap_sort(people)
+        l = ['E 191', 'B 98', 'C 97', 'D 96', 'A 90']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'E 191' == 'A10'
+E             - E 191
+E             + A10
+
+test_student.py:70: AssertionError
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+        heap_sort(people)
+        l = ['B 198', 'C 197', 'A 190']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'B 198' == 'A10'
+E             - B 198
+E             + A10
+
+test_student.py:85: AssertionError
+========================================= 5 failed, 1 passed in 0.29 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+___________________________________________________ test_s_person_1 ___________________________________________________
+
+    def test_s_person_1():
+        p = Person('A', 24, 1)
+>       assert str(p) == 'A 99'
+E       AssertionError: assert 'A 1' == 'A 99'
+E         - A 1
+E         + A 99
+
+test_student.py:14: AssertionError
+___________________________________________________ test_s_person_2 ___________________________________________________
+
+    def test_s_person_2():
+        p = Person('A', 49, 10)
+>       assert str(p) == 'A 190'
+E       AssertionError: assert 'A 10' == 'A 190'
+E         - A 10
+E         + A 190
+E         ?    +
+
+test_student.py:18: AssertionError
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+        heap_sort(people)
+        l = ['C 197', 'H 192', 'A 99', 'B 98', 'D 96', 'E 95', 'F 94',
+                'G 93', 'I 91', 'J 90', 'K 89', 'L 88']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'C 197' == 'A 1'
+E             - C 197
+E             + A 1
+
+test_student.py:43: AssertionError
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+        heap_sort(people)
+        l = ['E 191', 'B 98', 'C 97', 'D 96', 'A 90']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'E 191' == 'A 10'
+E             - E 191
+E             + A 10
+
+test_student.py:70: AssertionError
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+        heap_sort(people)
+        l = ['B 198', 'C 197', 'A 190']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'B 198' == 'A 10'
+E             - B 198
+E             + A 10
+
+test_student.py:85: AssertionError
+========================================= 5 failed, 1 passed in 0.19 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+___________________________________________________ test_s_person_1 ___________________________________________________
+
+    def test_s_person_1():
+        p = Person('A', 24, 1)
+>       assert str(p) == 'A 99'
+E       AssertionError: assert 'A 1' == 'A 99'
+E         - A 1
+E         + A 99
+
+test_student.py:14: AssertionError
+___________________________________________________ test_s_person_2 ___________________________________________________
+
+    def test_s_person_2():
+>       p = Person('A', 49, 10)
+
+test_student.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:7: in __init__
+    self.get_priority()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a07.Person object at 0x0000025C3BAD5710>
+
+    def get_priority(self):
+        priority = 100 - self.q_no
+    
+        if self.age >= 40:
+>           self.priority += 100
+E           AttributeError: 'Person' object has no attribute 'priority'
+
+a07.py:15: AttributeError
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+>           Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:7: in __init__
+    self.get_priority()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a07.Person object at 0x0000025C3BB22CF8>
+
+    def get_priority(self):
+        priority = 100 - self.q_no
+    
+        if self.age >= 40:
+>           self.priority += 100
+E           AttributeError: 'Person' object has no attribute 'priority'
+
+a07.py:15: AttributeError
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+>           Person('E', 41, 9)
+        ]
+
+test_student.py:62: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:7: in __init__
+    self.get_priority()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a07.Person object at 0x0000025C3BB3B7F0>
+
+    def get_priority(self):
+        priority = 100 - self.q_no
+    
+        if self.age >= 40:
+>           self.priority += 100
+E           AttributeError: 'Person' object has no attribute 'priority'
+
+a07.py:15: AttributeError
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+>           Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+
+test_student.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:7: in __init__
+    self.get_priority()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a07.Person object at 0x0000025C3BB22C50>
+
+    def get_priority(self):
+        priority = 100 - self.q_no
+    
+        if self.age >= 40:
+>           self.priority += 100
+E           AttributeError: 'Person' object has no attribute 'priority'
+
+a07.py:15: AttributeError
+========================================= 5 failed, 1 passed in 0.34 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+___________________________________________________ test_s_person_1 ___________________________________________________
+
+    def test_s_person_1():
+        p = Person('A', 24, 1)
+>       assert str(p) == 'A 99'
+E       AssertionError: assert 'A 1' == 'A 99'
+E         - A 1
+E         + A 99
+
+test_student.py:14: AssertionError
+___________________________________________________ test_s_person_2 ___________________________________________________
+
+    def test_s_person_2():
+        p = Person('A', 49, 10)
+>       assert str(p) == 'A 190'
+E       AssertionError: assert 'A 10' == 'A 190'
+E         - A 10
+E         + A 190
+E         ?    +
+
+test_student.py:18: AssertionError
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+        heap_sort(people)
+        l = ['C 197', 'H 192', 'A 99', 'B 98', 'D 96', 'E 95', 'F 94',
+                'G 93', 'I 91', 'J 90', 'K 89', 'L 88']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'C 197' == 'A 1'
+E             - C 197
+E             + A 1
+
+test_student.py:43: AssertionError
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+        heap_sort(people)
+        l = ['E 191', 'B 98', 'C 97', 'D 96', 'A 90']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'E 191' == 'A 10'
+E             - E 191
+E             + A 10
+
+test_student.py:70: AssertionError
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+        heap_sort(people)
+        l = ['B 198', 'C 197', 'A 190']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'B 198' == 'A 10'
+E             - B 198
+E             + A 10
+
+test_student.py:85: AssertionError
+========================================= 5 failed, 1 passed in 0.22 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+___________________________________________________ test_s_person_1 ___________________________________________________
+
+    def test_s_person_1():
+        p = Person('A', 24, 1)
+>       assert str(p) == 'A 99'
+E       AssertionError: assert 'A 1' == 'A 99'
+E         - A 1
+E         + A 99
+
+test_student.py:14: AssertionError
+___________________________________________________ test_s_person_2 ___________________________________________________
+
+    def test_s_person_2():
+        p = Person('A', 49, 10)
+>       assert str(p) == 'A 190'
+E       AssertionError: assert 'A 10' == 'A 190'
+E         - A 10
+E         + A 190
+E         ?    +
+
+test_student.py:18: AssertionError
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+        heap_sort(people)
+        l = ['C 197', 'H 192', 'A 99', 'B 98', 'D 96', 'E 95', 'F 94',
+                'G 93', 'I 91', 'J 90', 'K 89', 'L 88']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'C 197' == 'A 1'
+E             - C 197
+E             + A 1
+
+test_student.py:43: AssertionError
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+        heap_sort(people)
+        l = ['E 191', 'B 98', 'C 97', 'D 96', 'A 90']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'E 191' == 'A 10'
+E             - E 191
+E             + A 10
+
+test_student.py:70: AssertionError
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+        heap_sort(people)
+        l = ['B 198', 'C 197', 'A 190']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'B 198' == 'A 10'
+E             - B 198
+E             + A 10
+
+test_student.py:85: AssertionError
+========================================= 5 failed, 1 passed in 0.18 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+___________________________________________________ test_s_person_1 ___________________________________________________
+
+    def test_s_person_1():
+        p = Person('A', 24, 1)
+>       assert str(p) == 'A 99'
+E       AssertionError: assert 'A 1' == 'A 99'
+E         - A 1
+E         + A 99
+
+test_student.py:14: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+___________________________________________________ test_s_person_2 ___________________________________________________
+
+    def test_s_person_2():
+        p = Person('A', 49, 10)
+>       assert str(p) == 'A 190'
+E       AssertionError: assert 'A 10' == 'A 190'
+E         - A 10
+E         + A 190
+E         ?    +
+
+test_student.py:18: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+        heap_sort(people)
+        l = ['C 197', 'H 192', 'A 99', 'B 98', 'D 96', 'E 95', 'F 94',
+                'G 93', 'I 91', 'J 90', 'K 89', 'L 88']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'C 197' == 'A 1'
+E             - C 197
+E             + A 1
+
+test_student.py:43: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+        heap_sort(people)
+        l = ['E 191', 'B 98', 'C 97', 'D 96', 'A 90']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'E 191' == 'A 10'
+E             - E 191
+E             + A 10
+
+test_student.py:70: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+96
+91
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+        heap_sort(people)
+        l = ['B 198', 'C 197', 'A 190']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'B 198' == 'A 10'
+E             - B 198
+E             + A 10
+
+test_student.py:85: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+========================================= 5 failed, 1 passed in 0.28 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+___________________________________________________ test_s_person_1 ___________________________________________________
+
+    def test_s_person_1():
+        p = Person('A', 24, 1)
+>       assert str(p) == 'A 99'
+E       AssertionError: assert 'A 1' == 'A 99'
+E         - A 1
+E         + A 99
+
+test_student.py:14: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+___________________________________________________ test_s_person_2 ___________________________________________________
+
+    def test_s_person_2():
+        p = Person('A', 49, 10)
+>       assert str(p) == 'A 190'
+E       AssertionError: assert 'A 10' == 'A 190'
+E         - A 10
+E         + A 190
+E         ?    +
+
+test_student.py:18: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+        heap_sort(people)
+        l = ['C 197', 'H 192', 'A 99', 'B 98', 'D 96', 'E 95', 'F 94',
+                'G 93', 'I 91', 'J 90', 'K 89', 'L 88']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'C 197' == 'A 1'
+E             - C 197
+E             + A 1
+
+test_student.py:43: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+        heap_sort(people)
+        l = ['E 191', 'B 98', 'C 97', 'D 96', 'A 90']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'E 191' == 'A 10'
+E             - E 191
+E             + A 10
+
+test_student.py:70: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+96
+91
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+        heap_sort(people)
+        l = ['B 198', 'C 197', 'A 190']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'B 198' == 'A 10'
+E             - B 198
+E             + A 10
+
+test_student.py:85: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+========================================= 5 failed, 1 passed in 0.21 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ..F.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+        heap_sort(people)
+        l = ['C 197', 'H 192', 'A 99', 'B 98', 'D 96', 'E 95', 'F 94',
+                'G 93', 'I 91', 'J 90', 'K 89', 'L 88']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'C 197' == 'A 99'
+E             - C 197
+E             + A 99
+
+test_student.py:43: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+        heap_sort(people)
+        l = ['E 191', 'B 98', 'C 97', 'D 96', 'A 90']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'E 191' == 'A 90'
+E             - E 191
+E             + A 90
+
+test_student.py:70: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+96
+91
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+        heap_sort(people)
+        l = ['B 198', 'C 197', 'A 190']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'B 198' == 'A 190'
+E             - B 198
+E             + A 190
+
+test_student.py:85: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+========================================= 3 failed, 3 passed in 0.18 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+======================================================= ERRORS ========================================================
+__________________________________________ ERROR collecting test_student.py ___________________________________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:499: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:701: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:983: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:967: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:668: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:638: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:296: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a07 import Person
+E     File "C:\Users\Owner\Downloads\assignment7\a07.py", line 74
+E       sould output:
+E                  ^
+E   SyntaxError: invalid syntax
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=============================================== 1 error in 0.39 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+======================================================= ERRORS ========================================================
+__________________________________________ ERROR collecting test_student.py ___________________________________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:499: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:701: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:983: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:967: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:668: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:638: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:296: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a07 import Person
+E     File "C:\Users\Owner\Downloads\assignment7\a07.py", line 78
+E       sould output:
+E                  ^
+E   SyntaxError: invalid syntax
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=============================================== 1 error in 0.43 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ..F.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+        heap_sort(people)
+        l = ['C 197', 'H 192', 'A 99', 'B 98', 'D 96', 'E 95', 'F 94',
+                'G 93', 'I 91', 'J 90', 'K 89', 'L 88']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'C 197' == 'A 99'
+E             - C 197
+E             + A 99
+
+test_student.py:43: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+        heap_sort(people)
+        l = ['E 191', 'B 98', 'C 97', 'D 96', 'A 90']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'E 191' == 'A 90'
+E             - E 191
+E             + A 90
+
+test_student.py:70: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+96
+91
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+        heap_sort(people)
+        l = ['B 198', 'C 197', 'A 190']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'B 198' == 'A 190'
+E             - B 198
+E             + A 190
+
+test_student.py:85: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+========================================= 3 failed, 3 passed in 0.23 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ..F.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+>       heap_sort(people)
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:55: in heap_sort
+    build_heap(lst)
+a07.py:48: in build_heap
+    heapify(lst, n , i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+lst = [<a07.Person object at 0x0000023ED3D0EFD0>, <a07.Person object at 0x0000023ED3D22048>, <a07.Person object at 0x0000023...ject at 0x0000023ED3D220B8>, <a07.Person object at 0x0000023ED3D220F0>, <a07.Person object at 0x0000023ED3D22128>, ...]
+n = 12, root = 5
+
+    def heapify(lst, n, root):
+    
+    
+        largest = root
+        l = 2 * root + 1
+        r = 2 * root + 2
+    
+>       if l < n and lst[l] > lst[largest]:
+E       TypeError: '>' not supported between instances of 'Person' and 'Person'
+
+a07.py:33: TypeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+>       heap_sort(people)
+
+test_student.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:55: in heap_sort
+    build_heap(lst)
+a07.py:48: in build_heap
+    heapify(lst, n , i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+lst = [<a07.Person object at 0x0000023ED3D79630>, <a07.Person object at 0x0000023ED3D796A0>, <a07.Person object at 0x0000023ED3D796D8>, <a07.Person object at 0x0000023ED3D79710>, <a07.Person object at 0x0000023ED3D79668>]
+n = 5, root = 1
+
+    def heapify(lst, n, root):
+    
+    
+        largest = root
+        l = 2 * root + 1
+        r = 2 * root + 2
+    
+>       if l < n and lst[l] > lst[largest]:
+E       TypeError: '>' not supported between instances of 'Person' and 'Person'
+
+a07.py:33: TypeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+96
+91
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+>       heap_sort(people)
+
+test_student.py:80: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:55: in heap_sort
+    build_heap(lst)
+a07.py:48: in build_heap
+    heapify(lst, n , i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+lst = [<a07.Person object at 0x0000023ED3D67278>, <a07.Person object at 0x0000023ED3D670B8>, <a07.Person object at 0x0000023ED3D672E8>]
+n = 3, root = 0
+
+    def heapify(lst, n, root):
+    
+    
+        largest = root
+        l = 2 * root + 1
+        r = 2 * root + 2
+    
+>       if l < n and lst[l] > lst[largest]:
+E       TypeError: '>' not supported between instances of 'Person' and 'Person'
+
+a07.py:33: TypeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+========================================= 3 failed, 3 passed in 0.30 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ..F.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+>       heap_sort(people)
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:55: in heap_sort
+    build_heap(lst)
+a07.py:48: in build_heap
+    heapify(lst, n , i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+lst = [<a07.Person object at 0x000001EED60410F0>, <a07.Person object at 0x000001EED6041128>, <a07.Person object at 0x000001E...ject at 0x000001EED6041198>, <a07.Person object at 0x000001EED60411D0>, <a07.Person object at 0x000001EED6041208>, ...]
+n = 12, root = 5
+
+    def heapify(lst, n, root):
+    
+    
+        largest = root
+        l = 2 * root + 1
+        r = 2 * root + 2
+    
+>       if l < n and lst[l.priority] > lst[largest.priority]:
+E       AttributeError: 'int' object has no attribute 'priority'
+
+a07.py:33: AttributeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+>       heap_sort(people)
+
+test_student.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:55: in heap_sort
+    build_heap(lst)
+a07.py:48: in build_heap
+    heapify(lst, n , i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+lst = [<a07.Person object at 0x000001EED60995F8>, <a07.Person object at 0x000001EED6099668>, <a07.Person object at 0x000001EED60996D8>, <a07.Person object at 0x000001EED6099710>, <a07.Person object at 0x000001EED6099780>]
+n = 5, root = 1
+
+    def heapify(lst, n, root):
+    
+    
+        largest = root
+        l = 2 * root + 1
+        r = 2 * root + 2
+    
+>       if l < n and lst[l.priority] > lst[largest.priority]:
+E       AttributeError: 'int' object has no attribute 'priority'
+
+a07.py:33: AttributeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+96
+91
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+>       heap_sort(people)
+
+test_student.py:80: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:55: in heap_sort
+    build_heap(lst)
+a07.py:48: in build_heap
+    heapify(lst, n , i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+lst = [<a07.Person object at 0x000001EED60863C8>, <a07.Person object at 0x000001EED6086470>, <a07.Person object at 0x000001EED60864E0>]
+n = 3, root = 0
+
+    def heapify(lst, n, root):
+    
+    
+        largest = root
+        l = 2 * root + 1
+        r = 2 * root + 2
+    
+>       if l < n and lst[l.priority] > lst[largest.priority]:
+E       AttributeError: 'int' object has no attribute 'priority'
+
+a07.py:33: AttributeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+========================================= 3 failed, 3 passed in 0.28 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ..F.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+>       heap_sort(people)
+
+test_student.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:55: in heap_sort
+    build_heap(lst)
+a07.py:48: in build_heap
+    heapify(lst, n , i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+lst = [<a07.Person object at 0x0000026E930010F0>, <a07.Person object at 0x0000026E93001128>, <a07.Person object at 0x0000026...ject at 0x0000026E93001198>, <a07.Person object at 0x0000026E930011D0>, <a07.Person object at 0x0000026E93001208>, ...]
+n = 12, root = 4
+
+    def heapify(lst, n, root):
+    
+    
+        largest = root
+        l = 2 * root + 1
+        r = 2 * root + 2
+    
+        if l < n and lst[l].priority > lst[largest].priority:
+            largest = l
+    
+>       if r < n and lst[r] > lst[largest]:
+E       TypeError: '>' not supported between instances of 'Person' and 'Person'
+
+a07.py:36: TypeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+>       heap_sort(people)
+
+test_student.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:55: in heap_sort
+    build_heap(lst)
+a07.py:48: in build_heap
+    heapify(lst, n , i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+lst = [<a07.Person object at 0x0000026E930595F8>, <a07.Person object at 0x0000026E93059668>, <a07.Person object at 0x0000026E930596D8>, <a07.Person object at 0x0000026E93059710>, <a07.Person object at 0x0000026E93059780>]
+n = 5, root = 1
+
+    def heapify(lst, n, root):
+    
+    
+        largest = root
+        l = 2 * root + 1
+        r = 2 * root + 2
+    
+        if l < n and lst[l].priority > lst[largest].priority:
+            largest = l
+    
+>       if r < n and lst[r] > lst[largest]:
+E       TypeError: '>' not supported between instances of 'Person' and 'Person'
+
+a07.py:36: TypeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+96
+91
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+>       heap_sort(people)
+
+test_student.py:80: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a07.py:55: in heap_sort
+    build_heap(lst)
+a07.py:48: in build_heap
+    heapify(lst, n , i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+lst = [<a07.Person object at 0x0000026E93047518>, <a07.Person object at 0x0000026E93047550>, <a07.Person object at 0x0000026E93047470>]
+n = 3, root = 0
+
+    def heapify(lst, n, root):
+    
+    
+        largest = root
+        l = 2 * root + 1
+        r = 2 * root + 2
+    
+        if l < n and lst[l].priority > lst[largest].priority:
+            largest = l
+    
+>       if r < n and lst[r] > lst[largest]:
+E       TypeError: '>' not supported between instances of 'Person' and 'Person'
+
+a07.py:36: TypeError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+========================================= 3 failed, 3 passed in 0.21 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ..F.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_heap_sort_1 ___________________________________________________
+
+    def test_heap_sort_1():
+        people = [
+            Person('A', 24, 1),
+            Person('B', 32, 2),
+            Person('C', 45, 3),
+            Person('D', 22, 4),
+            Person('E', 21, 5),
+            Person('F', 32, 6),
+            Person('G', 39, 7),
+            Person('H', 44, 8),
+            Person('I', 22, 9),
+            Person('J', 29, 10),
+            Person('K', 32, 11),
+            Person('L', 31, 12)
+        ]
+    
+        heap_sort(people)
+        l = ['C 197', 'H 192', 'A 99', 'B 98', 'D 96', 'E 95', 'F 94',
+                'G 93', 'I 91', 'J 90', 'K 89', 'L 88']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'C 197' == 'L 88'
+E             - C 197
+E             + L 88
+
+test_student.py:43: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+__________________________________________________ test_heap_sort_3 ___________________________________________________
+
+    def test_heap_sort_3():
+        people = [
+            Person('A', 24, 10),
+            Person('B', 32, 2),
+            Person('C', 5, 3),
+            Person('D', 22, 4),
+            Person('E', 41, 9)
+        ]
+    
+        heap_sort(people)
+        l = ['E 191', 'B 98', 'C 97', 'D 96', 'A 90']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'E 191' == 'A 90'
+E             - E 191
+E             + A 90
+
+test_student.py:70: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+96
+91
+__________________________________________________ test_heap_sort_4 ___________________________________________________
+
+    def test_heap_sort_4():
+        people = [
+            Person('A', 41, 10),
+            Person('B', 42, 2),
+            Person('C', 46, 3)
+        ]
+    
+        heap_sort(people)
+        l = ['B 198', 'C 197', 'A 190']
+    
+        assert len(l) == len(people)
+        for i, j in zip(l, people):
+>           assert i == str(j)
+E           AssertionError: assert 'B 198' == 'A 190'
+E             - B 198
+E             + A 190
+
+test_student.py:85: AssertionError
+------------------------------------------------ Captured stdout call -------------------------------------------------
+90
+98
+97
+========================================= 3 failed, 3 passed in 0.24 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: C:\Users\Owner\Downloads\assignment7, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                                                           [100%]
+
+============================================== 6 passed in 0.07 seconds ===============================================
