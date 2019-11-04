@@ -1,0 +1,2374 @@
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:12: AttributeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:25: AttributeError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:34: AttributeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:46: AttributeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:61: AttributeError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:76: AttributeError
+============================================== 6 failed in 0.19 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:12: AttributeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:25: AttributeError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:34: AttributeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:46: AttributeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:61: AttributeError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:76: AttributeError
+============================================== 6 failed in 0.17 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002307C803128>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:28: TypeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:20: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002307C84F4E0>, key = 'blah'
+
+    def _get_hash(self, key):
+>       return key % self.size
+E       TypeError: not all arguments converted during string formatting
+
+a08.py:7: TypeError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:20: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002307C88E240>, key = (24, 2)
+
+    def _get_hash(self, key):
+>       return key % self.size
+E       TypeError: unsupported operand type(s) for %: 'tuple' and 'int'
+
+a08.py:7: TypeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002307C897438>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:28: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:20: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002307C89D748>, key = 'blah'
+
+    def _get_hash(self, key):
+>       return key % self.size
+E       TypeError: not all arguments converted during string formatting
+
+a08.py:7: TypeError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:20: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002307C8BC630>, key = 'blah'
+
+    def _get_hash(self, key):
+>       return key % self.size
+E       TypeError: not all arguments converted during string formatting
+
+a08.py:7: TypeError
+============================================== 6 failed in 0.34 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000150D8A2B160>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000150D8A7E518>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000150D8ABE358>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000150D8AC7668>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000150D8ACD6D8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000150D8AF7668>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+============================================== 6 failed in 0.22 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001C695AA5F98>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001C695AFD4E0>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001C695B3E320>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001C695B4B5C0>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001C695B386A0>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001C695B62048>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+============================================== 6 failed in 0.15 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F7FF79F2B0>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F7FF7F14A8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F7FF801438>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F7FF80F940>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F7FF8246A0>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F7FF80F9B0>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+============================================== 6 failed in 0.13 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000234894C2160>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000234894C25F8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002348954E3C8>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002348955D5F8>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000023489549C88>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000023489573128>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+============================================== 6 failed in 0.15 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F86998C208>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F869A21518>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F869A313C8>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F869A3F400>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:40: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F869A31C18>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:32: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F869A3F780>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+============================================== 6 failed in 0.14 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000149C8403198>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:41: TypeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:33: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000149C8403518>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:33: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000149C846E2B0>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000149C847B4E0>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+        if self.map[key_hash]:
+            self.map[key_hash] = key_value
+            return True
+    
+        else:
+>           for pair in self.map[key_hash]:
+E           TypeError: 'NoneType' object is not iterable
+
+a08.py:41: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:33: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000149C84900B8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:33: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000149C846E6A0>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+============================================== 6 failed in 0.15 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025B36871390>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+        # if key == int(key):
+>       return key % self.size
+E       TypeError: not all arguments converted during string formatting
+
+a08.py:9: TypeError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025B368C14A8>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+        # if key == int(key):
+>       return key % self.size
+E       TypeError: unsupported operand type(s) for %: 'tuple' and 'int'
+
+a08.py:9: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025B368DC518>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+        # if key == int(key):
+>       return key % self.size
+E       TypeError: not all arguments converted during string formatting
+
+a08.py:9: TypeError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025B368C16D8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+        # if key == int(key):
+>       return key % self.size
+E       TypeError: not all arguments converted during string formatting
+
+a08.py:9: TypeError
+========================================= 4 failed, 2 passed in 0.13 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000235BD648198>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000235BD694470>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000235BD6A5668>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000235BD6AC710>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+========================================= 4 failed, 2 passed in 0.34 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000022413D11390>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000022413D754E0>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000022413D11BA8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000022413D618D0>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+========================================= 4 failed, 2 passed in 0.34 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000017B49D4F240>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000017B49DB2400>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000017B49D4FC88>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000017B49DA3710>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+========================================= 4 failed, 2 passed in 0.34 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001A55A8FF470>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001A55A962390>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001A55A96B6D8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001A55A962E10>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+========================================= 4 failed, 2 passed in 0.26 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000287E6FE1390>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000287E7072390>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000287E6FE1C18>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:37: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000287E7063860>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+========================================= 4 failed, 2 passed in 0.19 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F77ED5F470>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F77EDC2400>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F77ED5FD68>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:38: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F77EDB3940>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+========================================= 4 failed, 2 passed in 0.23 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FF.FF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:41: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000283943F03C8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:41: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000028394454438>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+a08.py:8: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:41: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000283943F0C88>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:41: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000028394443898>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       if key == int(key):
+E       ValueError: invalid literal for int() with base 10: 'blah'
+
+a08.py:8: ValueError
+========================================= 4 failed, 2 passed in 0.26 seconds ==========================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                                                           [100%]
+
+============================================== 6 passed in 0.08 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000182E4B08828>, key = 17
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000182E4B81470>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000182E4B21860>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000182E4B94668>, key = 17
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000182E4B97710>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000182E4B879B0>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+============================================== 6 failed in 0.21 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025AA9FC2208>, key = 17
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025AAA01F400>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025AAA020438>, key = (24, 2)
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025AAA034668>, key = 17
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025AAA00D3C8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:58: in add
+    key_hash = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000025AAA0137B8>, key = 'blah'
+
+    def _get_hash(self, key):
+    
+>       get_int_hash(key)
+E       NameError: name 'get_int_hash' is not defined
+
+a08.py:33: NameError
+============================================== 6 failed in 0.20 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                                                           [100%]
+
+====================================================== FAILURES =======================================================
+________________________________________________ test_s_hashmap_add_1 _________________________________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F646B30400>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+>       if self.map[key_hash] is None:
+E       TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:60: TypeError
+________________________________________________ test_s_hashmap_add_2 _________________________________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F646B933C8>, key = 'blah', value = 'blah text'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+>       if self.map[key_hash] is None:
+E       TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:60: TypeError
+________________________________________________ test_s_hashmap_add_3 _________________________________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F646B308D0>, key = (24, 2), value = 'tuple text'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+>       if self.map[key_hash] is None:
+E       TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:60: TypeError
+________________________________________________ test_s_hashmap_del_1 _________________________________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F646BA5630>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+>       if self.map[key_hash] is None:
+E       TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:60: TypeError
+________________________________________________ test_s_hashmap_del_2 _________________________________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F646B986D8>, key = 'blah', value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+>       if self.map[key_hash] is None:
+E       TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:60: TypeError
+________________________________________________ test_s_hashmap_del_3 _________________________________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001F646B93208>, key = 'blah', value = 'seventeen'
+
+    def add(self, key, value):
+        key_hash = self._get_hash(key)
+        key_value = [key, value]
+    
+>       if self.map[key_hash] is None:
+E       TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:60: TypeError
+============================================== 6 failed in 0.27 seconds ===============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.7.3, pytest-4.3.1, py-1.8.0, pluggy-0.9.0
+rootdir: E:\Current Semester\Datastructures\Datastructures Assignments\assignment8, inifile:
+plugins: timeout-1.3.3, remotedata-0.3.1, openfiles-0.3.2, doctestplus-0.3.0, arraydiff-0.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                                                           [100%]
+
+============================================== 6 passed in 0.05 seconds ===============================================
