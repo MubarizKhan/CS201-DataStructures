@@ -38,6 +38,28 @@ class digraph:
             for n in next_nodes:
                 q.append(n)
 
+    def find_path(self, start, end, path = []):
+        if start not in self.g:
+            raise ValueError("Source node not in graph")
+
+        print (start + "," + end)
+
+        path.append(start)
+        if start == end:
+            return path
+        
+        for node in self.g[start]:
+            if node not in path:
+                new_path = self.find_path(node, end, path)
+                if new_path:
+                    return new_path
+        
+        return None
+
+
+
+
+
 
 
 
@@ -61,7 +83,7 @@ for n in edges:
     obj.add_edge(n[0], n[1])
 
 obj.traverse_graph('b')
-
+obj.find_path('a','d')
 
 
 
