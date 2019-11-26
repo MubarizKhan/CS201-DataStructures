@@ -98,12 +98,98 @@ class BST(treenode):
             else:
                 return self.find_root()
 
+    def dfs(self):
+        print (self.val)
+        if self.left:
+            self.left.dfs()
+
+        if self.right:
+            self.right.dfs()
+
+    def count_nodes(self):
+        count = 1
+        lc = 0
+        rc = 0
+        if self.left:
+            lc += self.left.count_nodes()
+        
+
+        if self.right:
+            rc += self.right.count_nodes()
+
+        return count + lc + rc
+
+    def get_height(self):
+        height = 1
+        lh = 0
+        rh = 0
+
+        if self.left:
+            lh = self.left.get_height()
+
+        if self.right:
+            rh = self.right.get_height()
+
+        return 1 + max(lh, rh)
+
+    def bfs(self):
+        to_visit = [self]
+        while to_visit:
+            current = to_visit.pop(0) 
+
+            print (current.val)
+            
+
+            if current.left:
+                to_visit.append(current.left)
+            if current.right:
+                to_visit.append(current.right)
+
+    def bfs_violate(self):
+        if self.left:
+            self.left.bfs_violate()
+        if self.left.val > self.val or self.right.val < self.val:
+            print(">")
+            return False
+
+        if self.right:
+            self.right.bfs_violate()
+
+    def dfs_apply(self, fn):
+        fn(self)
+
+        if self.left:
+            self.left.dfs_apply(fn)
+
+        if self.right:
+            self.right.dfs_apply(fn)
+        
+
+class sum:      
+
+    def __init__(self):
+        self.sum = 0
+
+    def add(self, node):
+        self.sum += node.val
+
+    def get(self):
+        return self.sum
+
+c = sum()
+
+        
+
+
 bst = BST(40)
 l = [55, 11, 22, 65,2,77]
 for i in l:
     bst.insert(i)
 
-bst.delete(11)
-bst.delete(65)
+# print(bst.count_nodes())
+# print(bst.get_height())
+print(bst.bfs())
+print(bst.dfs_apply(c.add))
+print(c.get())
 
 
