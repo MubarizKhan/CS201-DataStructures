@@ -37,6 +37,16 @@ class hashmap:
 
         raise KeyError("This key value doesn't exist")
 
+    def delete(self, key):
+        key_hash = self._get_hash(key)
+        if self.map[key_hash] is None:
+            raise KeyError("Key value not avalaiable")
+
+        for pair in range(0, len(self.map[key_hash])):
+            if self.map[key_hash][pair][0] == key:
+                self.map[key_hash].pop(pair)
+                print("deleted")
+                return True
 
 h = hashmap()
 h.add(10, "hh")
@@ -44,3 +54,5 @@ h.add(20, "lOlo")
 h.add(11, "Muaroz")
 h.add(12,"saad")
 h.get(10)
+
+h.delete(10)
